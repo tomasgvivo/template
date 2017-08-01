@@ -1,0 +1,68 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "![Logo of the project](./images/logo.sample.png)",
+  "using": {
+    "readme": "https://github.com/wearehive/project-guidelines/blob/master/README.sample.md",
+    "project": "https://github.com/wearehive/project-guidelines",
+    "testing": "https://blog.risingstack.com/node-hero-node-js-unit-testing-tutorial/",
+    "linting": "https://github.com/airbnb/javascript",
+    "config": "https://github.com/lorenwest/node-config",
+    "debug": "https://github.com/visionmedia/debug"
+  },
+  "url": "http://gitlab.opinaia.com/opinaiapanel/template",
+  "email": "tomas.gvivo@opinaiapanel.com",
+  "license": "Apache-2.0",
+  "private": true,
+  "author": {
+    "name": "Tomas Gonzalez Vivo",
+    "email": [
+      "tomasgvivo@gmail.com",
+      "tomas.gvivo@opinaiapanel.com"
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Tomas Gonzalez Vivo",
+      "email": [
+        "tomasgvivo@gmail.com",
+        "tomas.gvivo@opinaiapanel.com"
+      ]
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomasgvivo/template"
+  },
+  "files": [
+    "."
+  ],
+  "main": "index.js",
+  "bin": {
+    "template": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">= 7.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "os": [
+    "linux"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "NODE_ENV=test JASMINE_CONFIG_PATH=./jasmine.json jasmine"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jasmine": "^2.7.1",
+    "jasmine": "^2.6.0",
+    "karma-jasmine": "^1.1.0"
+  },
+  "dependencies": {
+    "debug": "^2.6.8",
+    "dotenv": "^4.0.0"
+  }
+}

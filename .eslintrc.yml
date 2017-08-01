@@ -1,0 +1,41 @@
+env:
+  commonjs: true
+  es6: true
+  node: true
+  jasmine: true
+
+plugins:
+  - jasmine
+
+extends:
+  - airbnb-base
+  - plugin:jasmine/recommended
+
+parserOptions:
+  sourceType: module
+
+rules:
+  no-console: 0
+  keyword-spacing:
+    - error
+    - after: false
+  no-tabs:
+    - error
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+  prefer-const:
+    - error
+  no-const-assign:
+    - error
+  no-var:
+    - error
